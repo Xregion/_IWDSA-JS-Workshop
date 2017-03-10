@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<audio id="myAudio">
+  		<source src="Nyan Cat - Uploaded by Yodix (youtube adilsonbankai).mp3" type="audio/mpeg">
+    	Your browser does not support the audio element.
+  	</audio>
+
+	<script src="portfolio.js"></script>
+</head>
+
+<style>
+p, button, label {
+  font-family: times;
+  font-size: 24px;
+}
+
+h1, h3 {
+  font-family: times;
+}
+
+.social-Media {
+  margin: 50px;
+}
+</style>
+
+<div class="container-fluid">
+  <header>
+    <table class="table table-hover">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="text-center">Nebula</h1>
+        </div>
+        <div class="col-md-4">
+          <button onclick="jump('about')" class="btn btn-default btn-lg">About</button>
+          <button onclick="jump('portfolio')" class="btn btn-default btn-lg">Portfolio</button>
+          <button onclick="jump('contact')" class="btn btn-default btn-lg">Contact</button>
+        </div>
+      </div>
+    </table>
+  </header>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="well">
+        <div class="row">
+          <div class="col-xs-8 col-sm-6">
+            <img class="img-responsive img-rounded" src="http://puu.sh/o9sqf/d3456c9c84.jpg" width="350">
+          </div>
+          <div class="col-xs-4 col-sm-6">
+            <p id="about" class="font">Hello everyone, my name is Nebula. I am a Junior Student at Cal Poly Pomona with experience in Web development and programming. I am also the head of the Workshop committee for the Cal Poly Pomona IWDSA club or Interactive Web Development
+              Student Association. This involves setting up workshops on web development, programming, etc. to help students and club members learn and continue to perfect their craft. I'm well versed in Java, C# scripting for Unity, and web development.</p>
+              <button onclick="playAudio()" class="btn btn-default btn-lg">Play Song</button>
+              <button onclick="pauseAudio()" class="btn btn-default btn-lg">Pause Song</button>
+          </div>
+        </div>
+      </div>
+      <div class="well">
+        <h3 id="portfolio" class="text-center">Porfolio</h3>
+        <hr>
+        <!--Portfolio stuff goes here-->
+        <div align="center" class="embed-responsive embed-responsive-16by9">
+          <video class="img-responsive" id="Video1">
+            <source src="VID_44920625_021625.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        <div class ="button-group text-center" role="group" id="buttonbar">
+          <button type="button" class="btn btn-default btn-lg" id="rew" onclick="skip(-10)">&lt;&lt;</button>
+          <button type="button" class="btn btn-default btn-lg" id="play" onclick="vidplay()">&gt;</button>
+          <button type="button" class="btn btn-default btn-lg" id="fastFwd" onclick="skip(10)">&gt;&gt;</button>
+       </div>
+      </div>
+      <div class="well">
+        <h3 id="contact" class="text-center">Contact</h3>
+        <hr>
+        <div class="row">
+          <div class="col-xs-8 col-sm-6">
+            <form action="http://www.example.come.php">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" required="required">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="Email" name="email" required="required">
+              </div>
+              <div class="form-group">
+                <label for="telephone">Phone</label>
+                <input id="telephone" type="text" name="phone" required="required">
+              </div>
+              <div class="form-group">
+                <label for="reasonsForContact">Message</label>
+                <textarea id="reasonsForContact" class="form-control" rows="3" required="required"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 col-sm-6">
+              <p>Please feel free to contact me with any questions you may have. I'd be happy to provide you with my resume or any other information you'd like.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <footer class="text-center">Written and Coded by <a href="https://www.linkedin.com/in/kyleperrix
+          ">Kyle Perri</a></footer>
+      </div>
+    </div>
+  </div>
